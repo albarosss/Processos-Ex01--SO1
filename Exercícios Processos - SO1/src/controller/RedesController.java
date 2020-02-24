@@ -63,11 +63,11 @@ public class RedesController {
 			BufferedReader buffer = new BufferedReader(reader);
 			String line = buffer.readLine();
 			while (line != null) {
-				if(line.contains("TTL")) {
+				if(line.contains("time") || line.contains("TLL")) {
 					if(SO.contains("Windows")) {
 						line=line.substring(line.indexOf(" t"), line.lastIndexOf(" "));
 					}else {
-						line=line.substring(line.indexOf("tim"), line.lastIndexOf("s"));
+						line=line.substring(line.indexOf("tim"), line.length());
 					}
 				}
 				System.out.println(line);
