@@ -12,7 +12,7 @@ public class Principal {
 		System.out.println(SO);
 		int opc = 0;
 		while(opc != 9) {
-			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite uma opção:\n \n1 - IP \n2 - Ping \n3 - Mata (Nome ou PID) \n9 - Sair"));
+			opc = Integer.parseInt(JOptionPane.showInputDialog("Digite uma opï¿½ï¿½o:\n \n1 - IP \n2 - Ping \n3 - Mata (Nome ou PID) \n9 - Sair"));
 			switch(opc) {
 				case 1:	CallController.ip(SO);
 					break;
@@ -27,10 +27,8 @@ public class Principal {
 						}
 					break;
 				case 9:	System.exit(0);
-				default: JOptionPane.showMessageDialog(null, "Valor inválido");
+				default: JOptionPane.showMessageDialog(null, "Valor invï¿½lido");
 			}
 		}
-		
-		
 	}
 }

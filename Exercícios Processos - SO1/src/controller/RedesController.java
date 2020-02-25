@@ -84,7 +84,7 @@ public class RedesController {
 		if(SO.contains("Windows")) {
 			command = "tasklist";
 		}else {
-			command = "top";
+			command = "ps -A";
 		}
 		try {
 			Process p = Runtime.getRuntime().exec(command);
@@ -148,7 +148,7 @@ public class RedesController {
 					System.err.println(e1.getMessage());
 				}
 			}else {
-				System.err.println("Commando inválido");
+				System.err.println("Commando invï¿½lido");
 			}
 		}
 
